@@ -41,16 +41,3 @@ class Graph:
     
     def size(self):
         return len(self.vertices)
-
-
-# test to see if graph is working
-#g = Graph()
-#for i in range(0,10,1):
-#    g.add_vertex(Vertex(i))
-
-#edges = [(0,1), (1,2), (2,3), (4,5), (5,9)]
-#for edge in edges:
-#    g.add_edge(edge[0], edge[1])
-
-#g.printGraph()
-#g.size()
