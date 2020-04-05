@@ -38,16 +38,19 @@ class Graph:
     def printGraph(self):
         for key in sorted(list(self.vertices.keys())):
             print(str(key) + str(self.vertices[key].neighbor))
+    
+    def size(self):
+        return len(self.vertices)
 
 
 # test to see if graph is working
-g = Graph()
-for i in range(0,10,1):
-    g.add_vertex(Vertex(i))
+#g = Graph()
+#for i in range(0,10,1):
+#    g.add_vertex(Vertex(i))
 
-edges = [(0,1), (1,2), (2,3), (4,5), (5,9)]
-for edge in edges:
-    g.add_edge(edge[0], edge[1])
+#edges = [(0,1), (1,2), (2,3), (4,5), (5,9)]
+#for edge in edges:
+#    g.add_edge(edge[0], edge[1])
 
-g.printGraph()
-
+#g.printGraph()
+#g.size()
